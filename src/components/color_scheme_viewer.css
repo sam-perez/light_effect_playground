@@ -1,0 +1,20 @@
+.color-scheme-viewer {
+    margin: 15px;
+}
+
+.color-scheme-viewer .square {
+    position: relative;
+    width: 100%;
+}
+
+.color-scheme-viewer .square:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.color-scheme-viewer .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
