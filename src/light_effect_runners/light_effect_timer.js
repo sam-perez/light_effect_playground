@@ -4,7 +4,7 @@ const createLightEffectTimer = ({ colorScheme: originalColorScheme }) => {
   let colorScheme = originalColorScheme;
   const updateListeners = new Set();
 
-  const MS_BETWEEN_UPDATES = 1000;
+  const MS_BETWEEN_UPDATES = 10;
 
   let startTime = new Date().getTime();
 
