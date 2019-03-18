@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Row, Col } from 'antd';
 import * as R from 'ramda';
 
 import './color_scheme_viewer.css';
 
-const HARDCODED_COLOR = {
-  schemeName: 'sandy stone beach ocean diver',
-  colors: [ '#e6e2af', '#a7a37e', '#efecca', '#046380', '#002f2f' ]
-};
-
 class ColorSchemeViewer extends Component {
   render() {
-    const { schemeName, colors } = HARDCODED_COLOR;
+    const { schemeName, colors } = this.props.colorScheme;
 
     return (
       <div className="color-scheme-viewer">
@@ -35,5 +31,9 @@ class ColorSchemeViewer extends Component {
     );
   }
 }
+
+ColorSchemeViewer.propTypes = {
+  colorScheme: PropTypes.any
+};
 
 export default ColorSchemeViewer;
