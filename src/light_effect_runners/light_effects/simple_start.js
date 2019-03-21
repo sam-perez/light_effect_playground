@@ -1,6 +1,6 @@
-const updateLightEffect = ({ colorScheme, startTime, currentTime }) => {
+const updateLightEffect = ({ colorScheme, startTime, currentTime, paceInMS }) => {
   // just cycle through the colors in the color scheme every second
-  const secondsElapsed = Math.floor((currentTime - startTime) / 1000);
+  const secondsElapsed = Math.floor((currentTime - startTime) / paceInMS);
   const colorsToPickFrom = colorScheme.colors;
 
   const firstIdx = secondsElapsed % colorsToPickFrom.length;
