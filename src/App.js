@@ -9,6 +9,10 @@ import * as simpleMixLightEffect from './light_effect_runners/light_effects/simp
 import * as fadeBackAndForthLightEffect from './light_effect_runners/light_effects/fade_back_and_forth';
 import * as doubleBlinkBackAndForth from './light_effect_runners/light_effects/double_blink_back_and_forth';
 import * as doubleTimeBlink from './light_effect_runners/light_effects/double_time_blink';
+import * as doubleFlashFastBlink from './light_effect_runners/light_effects/double_flash_fast_blink';
+import * as walkDownColors from './light_effect_runners/light_effects/walk_down_colors';
+import * as walkDownColorsSwitchEvery2 from './light_effect_runners/light_effects/walk_down_colors_switch_every_2';
+import * as simpleFadeRandomColor from './light_effect_runners/light_effects/simple_fade_random_color';
 import * as R from 'ramda';
 
 const HARDCODED_COLOR_SCHEME = {
@@ -40,6 +44,22 @@ const lightEffectPairs = [
   {
     name: 'DOUBLE TIME BLINK',
     effect: doubleTimeBlink
+  },
+  {
+    name: 'DOUBLE FLASH FAST BLINK',
+    effect: doubleFlashFastBlink
+  },
+  {
+    name: 'WALK DOWN COLORS',
+    effect: walkDownColors
+  },
+  {
+    name: 'WALK DOWN COLORS SWITCH EVERY 2',
+    effect: walkDownColorsSwitchEvery2
+  },
+  {
+    name: 'SIMPLE FADE RANDOM COLOR',
+    effect: simpleFadeRandomColor
   }
 ];
 
